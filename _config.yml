@@ -1,0 +1,94 @@
+# GitHub Pages Configuration
+# This file configures GitHub Pages settings
+
+# Site settings
+title: "Kemal Letić - Web Developer Portfolio"
+description: "Web Developer Portfolio showcasing projects and skills"
+url: "https://yourusername.github.io"
+baseurl: "/github-stranica"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _redirects
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Social links
+social:
+  github: yourusername
+  linkedin: yourusername
+  email: your.email@example.com
+
+# Author information
+author:
+  name: "Kemal Letić"
+  email: "your.email@example.com"
+  description: "Web Developer & Designer"
+  avatar: "/assets/images/avatar.jpg"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/#about"
+  - title: "Projects"
+    url: "/#projects"
+  - title: "Skills"
+    url: "/#skills"
+  - title: "Contact"
+    url: "/#contact"
+
+# SEO
+seo:
+  type: "Person"
+  name: "Kemal Letić"
+  url: "https://yourusername.github.io"
+  image: "/assets/images/og-image.jpg"
+  description: "Web Developer Portfolio showcasing projects and skills"
+  twitter:
+    card: "summary_large_image"
+    creator: "@yourusername"

@@ -1,0 +1,10 @@
+# Netlify redirects (if you decide to use Netlify instead of GitHub Pages)
+# This file is optional and only needed for Netlify
+
+# Redirect all 404s to index.html for SPA behavior
+/*    /index.html   200
+
+# Custom redirects
+/old-page    /new-page    301
+
+

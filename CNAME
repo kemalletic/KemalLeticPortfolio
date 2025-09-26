@@ -1,0 +1,9 @@
+# Custom domain configuration
+# Replace 'yourusername.github.io' with your custom domain if you have one
+# Example: yourname.com or www.yourname.com
+# Leave this file empty if you want to use the default GitHub Pages URL
+
+# If you have a custom domain, uncomment and modify the line below:
+# yourname.com
+
+

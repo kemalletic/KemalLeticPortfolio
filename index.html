@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemal Letić - Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Full-Stack Developer Portfolio showcasing frontend, backend, and blockchain projects">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231d4ed8;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%233b82f6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='Inter, sans-serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'%3EKL%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Kemal Letić</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Floating Shapes -->
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
+        <!-- Particle System -->
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Available for Work</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Kemal Letić</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text">Full-Stack Developer</span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    I create beautiful, responsive websites and robust web applications. 
+                    Passionate about turning ideas into digital experiences that make a difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="mailto:letickemal@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/kemalletic" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kemal-leti%C4%87-3b2834331/" class="social-link" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:letickemal@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <div class="avatar-ring"></div>
+                    <img src="images/portrait.jpg" alt="Kemal Letić - Web Developer" class="portrait-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <!-- About Section Floating Elements -->
+        <div class="about-floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate full-stack developer with expertise in both 
+                        frontend and backend development. I graduated with a Bachelor's 
+                        degree in Information Technologies from International Burch University, 
+                        which provided me with a strong foundation in computer science 
+                        and software engineering principles.
+                    </p>
+                    <p>
+                        With experience in modern web technologies, blockchain development, 
+                        and real-time applications, I enjoy tackling complex challenges 
+                        and building scalable solutions that make a real impact. My academic 
+                        background combined with hands-on experience allows me to approach 
+                        problems with both theoretical knowledge and practical solutions.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <!-- Skills Section Floating Elements -->
+            <div class="skills-floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">My technical toolkit for building amazing digital experiences</p>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <!-- Frontend Technologies -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                            <p>Creating beautiful, responsive user interfaces</p>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Technologies -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                            <p>Building robust server-side applications</p>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-php"></i>
+                                </div>
+                                <span class="skill-name">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain Technologies -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <h3>Blockchain Development</h3>
+                            <p>Building decentralized applications on Ethereum</p>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <span class="skill-name">Solidity</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-ethereum"></i>
+                                </div>
+                                <span class="skill-name">Ethereum</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <span class="skill-name">Ethers.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="skill-name">MetaMask</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Design -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Tools & Design</h3>
+                            <p>Essential tools for development and design</p>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-figma"></i>
+                                </div>
+                                <span class="skill-name">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <!-- Projects Section Floating Elements -->
+        <div class="projects-floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Explore my latest work and creative solutions</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" onclick="openProjectModal('Student Mental Health Tracker')">
+                    <div class="project-image">
+                        <img src="images/StudentMentalHealthTracker.png" alt="Student Mental Health Tracker Screenshot" class="project-screenshot">
+                        <div class="media-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>View Project Demos</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Mental Health Tracker</h3>
+                        <p class="project-description">
+                            A comprehensive web application designed to help students monitor and manage their mental health. 
+                            Features mood tracking, stress level monitoring, wellness resources, and progress analytics 
+                            to support student well-being throughout their academic journey.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="http://kemalletic.me/Student-Mental-Health-Tracker/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" onclick="openProjectModal('HopeChain')">
+                    <div class="project-image">
+                        <img src="images/hopechain1.png" alt="HopeChain Screenshot" class="project-screenshot">
+                        <div class="media-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>View Project Demos</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">HopeChain</h3>
+                        <p class="project-description">
+                            A blockchain-based crowdfunding platform built on Ethereum where users can create fundraising campaigns 
+                            and receive ETH donations. Features transparent smart contracts, automatic payouts, and secure 
+                            decentralized fund management without intermediaries.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Solidity</span>
+                            <span class="tech-tag">Ethereum</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Ethers.js</span>
+                            <span class="tech-tag">MetaMask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="http://kemalletic.me/HopeChainKL/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <!-- Contact Section Floating Elements -->
+        <div class="contact-floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, I'll try my best 
+                        to get back to you!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:letickemal@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            letickemal@gmail.com
+                        </a>
+                        <a href="mailto:kemal.letic@stu.ibu.edu.ba" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            kemal.letic@stu.ibu.edu.ba
+                        </a>
+                        <a href="https://github.com/kemalletic" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            github.com/kemalletic
+                        </a>
+                        <a href="https://www.linkedin.com/in/kemal-leti%C4%87-3b2834331/" class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            linkedin.com/in/kemal-letić
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/xkgqgvjz" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kemal Letić. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Media Modal (Images & Videos) -->
+        <div id="mediaModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeMediaModal()">&times;</span>
+                <div id="modalMedia" class="modal-media">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+                <div class="modal-caption" id="modalCaption"></div>
+            </div>
+        </div>
+
+        <!-- Project Modal (All Demos) -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content project-modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title-section">
+                        <h2 id="projectModalTitle">Student Mental Health Tracker</h2>
+                        <p id="projectModalDescription">Explore the application through screenshots and video demos</p>
+                    </div>
+                    <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Project Demos">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <div class="modal-navigation">
+                    <button class="nav-tab active" data-tab="screenshots">
+                        <i class="fas fa-images"></i>
+                        <span>Screenshots</span>
+                    </button>
+                    <button class="nav-tab" data-tab="videos">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Video Demos</span>
+                    </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="modal-content-area">
+                    <!-- Screenshots Tab -->
+                    <div class="tab-content active" id="screenshots-tab">
+                        <div class="content-grid">
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/StudentMentalHealthTracker.png', 'Student Mental Health Tracker - Main Dashboard', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/StudentMentalHealthTracker.png" alt="Main Dashboard Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Main Dashboard</h3>
+                                    <p>Overview of the application's main interface</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/login.png', 'Student Mental Health Tracker - Login Interface', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/login.png" alt="Login Interface Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Login Interface</h3>
+                                    <p>User authentication and access control</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/studentdashboard2.png', 'Student Mental Health Tracker - Student Dashboard', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/studentdashboard2.png" alt="Student Dashboard Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Student Dashboard</h3>
+                                    <p>Dedicated interface for student users</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/psychodashboard1.png', 'Student Mental Health Tracker - Psychologist Dashboard', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/psychodashboard1.png" alt="Psychologist Dashboard Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Psychologist Dashboard</h3>
+                                    <p>Professional interface for mental health practitioners</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/psychodashboard2.png', 'Student Mental Health Tracker - Psychologist Dashboard View 2', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/psychodashboard2.png" alt="Psychologist Dashboard View 2 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Psychologist Dashboard View 2</h3>
+                                    <p>Additional psychologist interface features</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/psychodashboard3.png', 'Student Mental Health Tracker - Psychologist Dashboard View 3', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/psychodashboard3.png" alt="Psychologist Dashboard View 3 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Psychologist Dashboard View 3</h3>
+                                    <p>Advanced psychologist interface features</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/chat1.png', 'Student Mental Health Tracker - Chat Interface', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/chat1.png" alt="Chat Interface Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Chat Interface</h3>
+                                    <p>Real-time messaging system interface</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/chat2.png', 'Student Mental Health Tracker - Chat Interface View 2', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/chat2.png" alt="Chat Interface View 2 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Chat Interface View 2</h3>
+                                    <p>Additional chat interface features</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/call1.png', 'Student Mental Health Tracker - Video Call Interface', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/call1.png" alt="Video Call Interface Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Video Call Interface</h3>
+                                    <p>Remote consultation interface</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/call2.png', 'Student Mental Health Tracker - Video Call Interface View 2', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/call2.png" alt="Video Call Interface View 2 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Video Call Interface View 2</h3>
+                                    <p>Additional video call features</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/call3.png', 'Student Mental Health Tracker - Video Call Interface View 3', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/call3.png" alt="Video Call Interface View 3 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Video Call Interface View 3</h3>
+                                    <p>Advanced video call features</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/studentdashboard1.png', 'Student Mental Health Tracker - Student Dashboard View 1', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/studentdashboard1.png" alt="Student Dashboard View 1 Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Student Dashboard View 1</h3>
+                                    <p>Primary student interface view</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Videos Tab -->
+                    <div class="tab-content" id="videos-tab">
+                        <div class="content-grid">
+                            <div class="media-item video-item" onclick="openVideoPlayer('videos/studentdesktop.mkv', 'Student Dashboard - Desktop View')">
+                                <div class="media-preview">
+                                    <video class="preview-video" poster="images/StudentMentalHealthTracker.png">
+                                        <source src="videos/studentdesktop.mkv" type="video/x-matroska">
+                                    </video>
+                                    <div class="media-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Student Dashboard</h3>
+                                    <p>Main student interface with mood tracking and analytics</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item video-item" onclick="openVideoPlayer('videos/psychologist1desktop.mkv', 'Psychologist Dashboard - Desktop View')">
+                                <div class="media-preview">
+                                    <video class="preview-video" poster="images/StudentMentalHealthTracker.png">
+                                        <source src="videos/psychologist1desktop.mkv" type="video/x-matroska">
+                                    </video>
+                                    <div class="media-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Psychologist Dashboard</h3>
+                                    <p>Professional interface for mental health practitioners</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item video-item" onclick="openVideoPlayer('videos/admin1desktop.mkv', 'Admin Dashboard - Desktop View')">
+                                <div class="media-preview">
+                                    <video class="preview-video" poster="images/StudentMentalHealthTracker.png">
+                                        <source src="videos/admin1desktop.mkv" type="video/x-matroska">
+                                    </video>
+                                    <div class="media-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Admin Dashboard</h3>
+                                    <p>System administration and user management interface</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item video-item" onclick="openVideoPlayer('videos/chatintegration.mkv', 'Chat Integration Feature')">
+                                <div class="media-preview">
+                                    <video class="preview-video" poster="images/StudentMentalHealthTracker.png">
+                                        <source src="videos/chatintegration.mkv" type="video/x-matroska">
+                                    </video>
+                                    <div class="media-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Chat Integration</h3>
+                                    <p>Real-time messaging system for student-counselor communication</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item video-item" onclick="openVideoPlayer('videos/videocallintegration.mkv', 'Video Call Integration Feature')">
+                                <div class="media-preview">
+                                    <video class="preview-video" poster="images/StudentMentalHealthTracker.png">
+                                        <source src="videos/videocallintegration.mkv" type="video/x-matroska">
+                                    </video>
+                                    <div class="media-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Video Call Integration</h3>
+                                    <p>Remote consultation and therapy session capabilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HopeChain Project Modal -->
+        <div id="hopechainModal" class="modal">
+            <div class="modal-content project-modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title-section">
+                        <h2 id="hopechainModalTitle">HopeChain</h2>
+                        <p id="hopechainModalDescription">Decentralized crowdfunding platform built on Ethereum blockchain</p>
+                    </div>
+                    <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Project Demos">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Tabs -->
+                <div class="modal-navigation">
+                    <button class="nav-tab active" data-tab="hopechain-screenshots">
+                        <i class="fas fa-images"></i>
+                        <span>Screenshots</span>
+                    </button>
+                    <button class="nav-tab" data-tab="hopechain-videos">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Video Demos</span>
+                    </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="modal-content-area">
+                    <!-- Screenshots Tab -->
+                    <div class="tab-content active" id="hopechain-screenshots-tab">
+                        <div class="content-grid">
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/hopechain1.png', 'HopeChain - Main Interface', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/hopechain1.png" alt="HopeChain Main Interface Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Main Interface</h3>
+                                    <p>Campaign creation and donation interface</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/hopechain11.png', 'HopeChain - Campaign Dashboard', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/hopechain11.png" alt="HopeChain Campaign Dashboard Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Campaign Dashboard</h3>
+                                    <p>Campaign management and progress tracking</p>
+                                </div>
+                            </div>
+                            
+                            <div class="media-item screenshot-item" onclick="openMediaModal('images/hopechain111.png', 'HopeChain - Additional Interface', 'image')">
+                                <div class="media-preview">
+                                    <img src="images/hopechain111.png" alt="HopeChain Additional Interface Screenshot">
+                                    <div class="media-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Additional Interface</h3>
+                                    <p>Extended HopeChain platform features</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Videos Tab -->
+                    <div class="tab-content" id="hopechain-videos-tab">
+                        <div class="content-grid">
+                            <div class="media-item video-item">
+                                <div class="media-preview">
+                                    <div class="video-placeholder">
+                                        <i class="fas fa-video"></i>
+                                        <p>Video demos coming soon</p>
+                                    </div>
+                                </div>
+                                <div class="media-info">
+                                    <h3>Demo Videos</h3>
+                                    <p>Interactive demonstrations of HopeChain features</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Player Overlay -->
+        <div id="videoPlayerOverlay" class="video-player-overlay">
+            <div class="video-player-container">
+                <video id="videoPlayer" controls autoplay>
+                    <!-- Video source will be set dynamically -->
+                </video>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
