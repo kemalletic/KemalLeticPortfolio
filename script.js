@@ -717,6 +717,59 @@ const hopechainImages = [
     }
 ];
 
+// Define the image gallery for SSSD
+const sssdImages = [
+    {
+        src: 'images/sssd.png',
+        caption: 'SSSD - Main Dashboard',
+        type: 'image'
+    },
+    {
+        src: 'images/sssd1.png',
+        caption: 'SSSD - Authentication Interface',
+        type: 'image'
+    },
+    {
+        src: 'images/sssd2.png',
+        caption: 'SSSD - Security Features',
+        type: 'image'
+    }
+];
+
+// Define the image gallery for Book Review Application
+const bookreviewImages = [
+    {
+        src: 'images/bookreview1.png',
+        caption: 'Book Review - Main Dashboard',
+        type: 'image'
+    },
+    {
+        src: 'images/bookreview2.png',
+        caption: 'Book Review - Book Details',
+        type: 'image'
+    },
+    {
+        src: 'images/bookreview3.png',
+        caption: 'Book Review - User Profile',
+        type: 'image'
+    },
+    {
+        src: 'images/bookreview4.png',
+        caption: 'Book Review - Authentication',
+        type: 'image'
+    },
+    {
+        src: 'images/bookreview5.png',
+        caption: 'Book Review - Search & Filter',
+        type: 'image'
+    },
+    {
+        src: 'images/bookreview6.png',
+        caption: 'Book Review - Admin Dashboard',
+        type: 'image'
+    }
+];
+
 function openMediaModal(src, caption, type) {
     const modal = document.getElementById('mediaModal');
     const modalMedia = document.getElementById('modalMedia');
@@ -725,6 +778,10 @@ function openMediaModal(src, caption, type) {
     // Determine which project this image belongs to and set the correct gallery
     if (src.includes('hopechain')) {
         imageGallery = hopechainImages;
+    } else if (src.includes('sssd')) {
+        imageGallery = sssdImages;
+    } else if (src.includes('bookreview')) {
+        imageGallery = bookreviewImages;
     } else {
         imageGallery = studentMentalHealthImages;
     }
@@ -912,15 +969,57 @@ function openProjectModal(projectName) {
         
         // Initialize tab functionality
         initializeTabNavigation();
+    } else if (projectName === 'SSSD') {
+        const modal = document.getElementById('sssdModal');
+        const title = document.getElementById('sssdModalTitle');
+        const description = document.getElementById('sssdModalDescription');
+        
+        title.textContent = 'Secure Software System Development';
+        description.textContent = 'Comprehensive security application with multi-factor authentication and advanced protection';
+        
+        // Initialize image gallery for keyboard navigation
+        imageGallery = sssdImages;
+        currentImageIndex = 0;
+        
+        modal.style.display = 'block';
+        
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+        
+        // Initialize tab functionality
+        initializeTabNavigation();
+    } else if (projectName === 'BookReview') {
+        const modal = document.getElementById('bookreviewModal');
+        const title = document.getElementById('bookreviewModalTitle');
+        const description = document.getElementById('bookreviewModalDescription');
+        
+        title.textContent = 'Book Review Application';
+        description.textContent = 'Full-stack web application for reviewing and discovering books with Spring Boot and React';
+        
+        // Initialize image gallery for keyboard navigation
+        imageGallery = bookreviewImages;
+        currentImageIndex = 0;
+        
+        modal.style.display = 'block';
+        
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+        
+        // Initialize tab functionality
+        initializeTabNavigation();
     }
 }
 
 function closeProjectModal() {
     const modal = document.getElementById('projectModal');
     const hopechainModal = document.getElementById('hopechainModal');
+    const sssdModal = document.getElementById('sssdModal');
+    const bookreviewModal = document.getElementById('bookreviewModal');
     
     if (modal) modal.style.display = 'none';
     if (hopechainModal) hopechainModal.style.display = 'none';
+    if (sssdModal) sssdModal.style.display = 'none';
+    if (bookreviewModal) bookreviewModal.style.display = 'none';
     
     // Restore body scroll
     document.body.style.overflow = 'auto';

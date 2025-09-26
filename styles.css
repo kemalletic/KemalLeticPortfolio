@@ -2022,6 +2022,14 @@ section {
     z-index: 10001 !important;
 }
 
+#sssdModal {
+    z-index: 10001 !important;
+}
+
+#bookreviewModal {
+    z-index: 10001 !important;
+}
+
 /* Generic rule for all project modals - ensures images always open above */
 [id$="Modal"]:not(#mediaModal):not(#videoPlayerOverlay) {
     z-index: 10001 !important;
